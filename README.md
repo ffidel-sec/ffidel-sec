@@ -4,8 +4,10 @@
 
 # Hi, I'm **Fidel G.**
 
-![terminal](terminal.svg)
-
 ![](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=3&section=header)
+
+![firma](firma.svg)
+
+![terminal](terminal.svg)
 
 </div>
