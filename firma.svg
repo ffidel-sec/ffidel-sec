@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="560">
+<defs>
+  <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#58a6ff"/>
+    <stop offset="50%"  stop-color="#bc8cff"/>
+    <stop offset="100%" stop-color="#ff7b72"/>
+  </linearGradient>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&amp;display=swap');
+    .firma {
+      font-family: 'Mr Dafoe', cursive;
+      font-size: 100px;
+      fill: url(#g);
+    }
+  </style>
+</defs>
+<text x="280" y="110" text-anchor="middle" class="firma">Fidel</text>
+</svg>
