@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" width="560">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap');
+    * { font-family: 'Fira Code', monospace; }
+    .bg { fill: #161b22; rx: 8; }
+    .bar { fill: #21262d; }
+    .prompt { fill: #bc8cff; }
+    .path { fill: #58a6ff; }
+    .cmd { fill: #e6edf3; }
+    .out { fill: #3fb950; }
+    .muted { fill: #8b949e; }
+
+    .line1 { animation: type1 18s infinite; }
+    .line2 { animation: type2 18s infinite; }
+    .line3 { animation: type3 18s infinite; }
+
+    .cursor { fill: #3fb950; animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    @keyframes type1 {
+      0%   { opacity:0 } 5%   { opacity:1 }
+      94%  { opacity:1 } 100% { opacity:0 }
+    }
+    @keyframes type2 {
+      0%   { opacity:0 } 33%  { opacity:0 } 38%  { opacity:1 }
+      94%  { opacity:1 } 100% { opacity:0 }
+    }
+    @keyframes type3 {
+      0%   { opacity:0 } 66%  { opacity:0 } 71%  { opacity:1 }
+      94%  { opacity:1 } 100% { opacity:0 }
+    }
+
+    .t1text {
+      animation: t1clip 18s infinite;
+    }
+    @keyframes t1clip {
+      0%  { clip-path: inset(0 100% 0 0); }
+      5%  { clip-path: inset(0 100% 0 0); }
+      15% { clip-path: inset(0 0% 0 0); }
+      94% { clip-path: inset(0 0% 0 0); }
+      100%{ clip-path: inset(0 0% 0 0); }
+    }
+    .t2text {
+      animation: t2clip 18s infinite;
+    }
+    @keyframes t2clip {
+      0%  { clip-path: inset(0 100% 0 0); }
+      38% { clip-path: inset(0 100% 0 0); }
+      48% { clip-path: inset(0 0% 0 0); }
+      94% { clip-path: inset(0 0% 0 0); }
+      100%{ clip-path: inset(0 0% 0 0); }
+    }
+    .t3text {
+      animation: t3clip 18s infinite;
+    }
+    @keyframes t3clip {
+      0%  { clip-path: inset(0 100% 0 0); }
+      71% { clip-path: inset(0 100% 0 0); }
+      81% { clip-path: inset(0 0% 0 0); }
+      94% { clip-path: inset(0 0% 0 0); }
+      100%{ clip-path: inset(0 0% 0 0); }
+    }
+
+    .cur1 { animation: cur1 18s infinite; }
+    @keyframes cur1 {
+      0%  {opacity:0} 5%  {opacity:1} 15% {opacity:0}
+      100%{opacity:0}
+    }
+    .cur2 { animation: cur2 18s infinite; }
+    @keyframes cur2 {
+      0%  {opacity:0} 38% {opacity:0} 38.1%{opacity:1} 48%{opacity:0}
+      100%{opacity:0}
+    }
+    .cur3 { animation: cur3 18s infinite; }
+    @keyframes cur3 {
+      0%  {opacity:0} 71% {opacity:0} 71.1%{opacity:1} 94%{opacity:1}
+      100%{opacity:0}
+    }
+  </style>
+
+  <!-- bg -->
+  <rect width="560" height="220" rx="8" fill="#161b22"/>
+  <!-- titlebar -->
+  <rect width="560" height="36" rx="8" fill="#21262d"/>
+  <rect y="28" width="560" height="8" fill="#21262d"/>
+  <!-- dots -->
+  <circle cx="18" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="50" cy="18" r="5" fill="#28c840"/>
+  <!-- title -->
+  <text x="280" y="22" text-anchor="middle" font-size="11" fill="#8b949e">zsh — ffidel-sec</text>
+
+  <!-- line 1: whoami block -->
+  <g class="line1">
+    <text x="16" y="68" font-size="12" class="prompt">┌──(ffidel-sec㉿arch)</text>
+    <text x="246" y="68" font-size="12" class="path">-[~]</text>
+    <text x="16" y="86" font-size="12" class="prompt">└─$ </text>
+    <text x="46" y="86" font-size="12" class="cmd t1text">whoami</text>
+    <rect class="cursor cur1" x="94" y="74" width="7" height="13"/>
+    <text x="16" y="104" font-size="12" class="out">ffidel-sec — Cybersecurity Enthusiast</text>
+  </g>
+
+  <!-- line 2: skills block -->
+  <g class="line2">
+    <text x="16" y="130" font-size="12" class="prompt">┌──(ffidel-sec㉿arch)</text>
+    <text x="246" y="130" font-size="12" class="path">-[~]</text>
+    <text x="16" y="148" font-size="12" class="prompt">└─$ </text>
+    <text x="46" y="148" font-size="12" class="cmd t2text">cat skills.txt</text>
+    <rect class="cursor cur2" x="156" y="136" width="7" height="13"/>
+    <text x="16" y="166" font-size="12" class="out">Bug Bounty | Pentesting | eJPT</text>
+  </g>
+
+  <!-- line 3: tools block -->
+  <g class="line3">
+    <text x="16" y="192" font-size="12" class="prompt">┌──(ffidel-sec㉿arch)</text>
+    <text x="246" y="192" font-size="12" class="path">-[~]</text>
+    <text x="16" y="210" font-size="12" class="prompt">└─$ </text>
+    <text x="46" y="210" font-size="12" class="cmd t3text">cat tools.txt</text>
+    <rect class="cursor cur3" x="46" y="198" width="7" height="13"/>
+  </g>
+</svg>
