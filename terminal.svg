@@ -67,11 +67,11 @@
 <text x="48" y="88"  font-size="12" class="cmd">whoami</text>
 <text x="16" y="108" font-size="12" class="out">ffidel-sec — Cybersecurity Enthusiast</text>
 
-<!-- static: cat skills.txt block -->
+<!-- static: cat skills.md block -->
 <text x="16" y="138" font-size="12" class="prompt">┌──(ffidel-sec㉿arch)</text>
 <text x="248" y="138" font-size="12" class="path">-[~]</text>
 <text x="16" y="158" font-size="12" class="prompt">└─$ </text>
-<text x="48" y="158" font-size="12" class="cmd">cat skills.txt</text>
+<text x="48" y="158" font-size="12" class="cmd">cat skills.md</text>
 
 <!-- animated skill lines -->
 <text x="16" y="182" font-size="12" class="out sk1">Bug Bounty | Pentesting | eJPTv2</text>
